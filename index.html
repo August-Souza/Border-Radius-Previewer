@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>BORDER RADIUS</h1>
+      <div class="container-border">
+        <div id="border" class="borderS"></div>
+      </div>
+      <div class="container-input">
+        <input id="lt" placeholder="0" value="0" onchange="updateLT(this.value)">
+        <input id="rt" placeholder="0" value="0" onchange="updateRT(this.value)">
+        <input id="rb" placeholder="0" value="0" onchange="updateRB(this.value)">
+        <input id="lb" placeholder="0" value="0" onchange="updateLB(this.value)">
+      </div> 
+    </div>
+    <script>
+      function updateLT(lt) {
+        const rt = document.getElementById("rt").value
+        const rb = document.getElementById("rb").value
+        const lb = document.getElementById("lb").value
+        document.getElementById('border').style.borderRadius = `${lt}% ${rt}% ${rb}% ${lb}% `
+        console.log(document.getElementById('border').style.borderRadius)
+      }
+      function updateRT(rt) {
+        const lt = document.getElementById("lt").value
+        const rb = document.getElementById("rb").value
+        const lb = document.getElementById("lb").value
+        document.getElementById('border').style.borderRadius = `${lt}% ${rt}% ${rb}% ${lb}% `
+        console.log(document.getElementById('border').style.borderRadius)
+      }
+      function updateRB(rb) {
+        const lt = document.getElementById("lt").value
+        const rt = document.getElementById("rt").value
+        const lb = document.getElementById("lb").value
+        document.getElementById('border').style.borderRadius = `${lt}% ${rt}% ${rb}% ${lb}% `
+        console.log(document.getElementById('border').style.borderRadius)
+      }
+      function updateLB(lb) {
+        const lt = document.getElementById("lt").value
+        const rt = document.getElementById("rt").value
+        const rb = document.getElementById("rb").value
+        document.getElementById('border').style.borderRadius = `${lt}% ${rt}% ${rb}% ${lb}% `
+        console.log(document.getElementById('border').style.borderRadius)
+      }
+    </script>
+  </body>
+</html>
