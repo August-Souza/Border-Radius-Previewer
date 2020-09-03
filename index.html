@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Título da página</title>
+    <link rel="Icon" href="./RB.png">
+    <title>Border Radius Previewer</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
@@ -12,11 +13,13 @@
         <div id="border" class="borderS"></div>
       </div>
       <div class="container-input">
-        <input id="lt" placeholder="0" value="0" onchange="updateLT(this.value)">
-        <input id="rt" placeholder="0" value="0" onchange="updateRT(this.value)">
-        <input id="rb" placeholder="0" value="0" onchange="updateRB(this.value)">
-        <input id="lb" placeholder="0" value="0" onchange="updateLB(this.value)">
+        <input id="lt" placeholder="LeftTop" value="0" onchange="updateLT(this.value)">
+        <input id="rt" placeholder="RightTop" value="0" onchange="updateRT(this.value)">
+        <input id="rb" placeholder="RightBottom" value="0" onchange="updateRB(this.value)">
+        <input id="lb" placeholder="LeftBottom" value="0" onchange="updateLB(this.value)">
+        
       </div> 
+      <p>LeftTop - RightTop - RightBottom - LeftBottom</p>
     </div>
     <script>
       function updateLT(lt) {
